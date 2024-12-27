@@ -462,6 +462,8 @@ country Card
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.8);
     border: 0.05rem solid #fff;
+    border-radius: 5px;
+    padding: 5px;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
   }
 
@@ -502,6 +504,45 @@ country Card
   letter-spacing: 0.1rem;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .section-searchFilter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .section-searchFilter .container-card {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    border-radius: 10px;
+  }
+
+  .section-searchFilter input {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .section-searchFilter .select-section {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .section-searchFilter .select-section > option {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+  }
 }
 
 /* ------------------ 
